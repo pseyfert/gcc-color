@@ -75,13 +75,13 @@ while True:
 		elif tokens[1] in ['undefined']:
 			lline = ' '.join(tokens[1:])
 			print(bold + tokens[0], red_bold + lline + reset)
-		elif tokens[1] in ['fel:', 'error:']: # error
+		elif tokens[1] in ['fel:', 'error:','Fehler:']: # error
 			lline = ' '.join(tokens[2:])
 			print(bold + tokens[0], tokens[1], red_bold + lline + reset)
 		elif len(tokens) > 2 and tokens[2] in ['fel:', 'error:']: # fatal error
 			lline = ' '.join(tokens[3:])
 			print(bold + ' '.join(tokens[0:3]), red_bold + lline + reset)
-		elif tokens[1] in ['varning:', 'warning:']:
+		elif tokens[1] in ['varning:', 'warning:','Warnung:']:
 			lline = ' '.join(tokens[2:])
 			print(bold + tokens[0], tokens[1], yellow_light + lline + reset)
 		elif tokens[1] in ['In'] and tokens[2] in ['function']:
