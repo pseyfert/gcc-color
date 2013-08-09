@@ -83,7 +83,7 @@ while True:
 			print(bold + ' '.join(tokens[0:3]), red_bold + lline + reset)
 		elif tokens[1] in ['varning:', 'warning:']:
 			lline = ' '.join(tokens[2:])
-			print(bold + tokens[0], tokens[1], yellow_bold + lline + reset)
+			print(bold + tokens[0], tokens[1], yellow_light + lline + reset)
 		elif tokens[1] in ['In'] and tokens[2] in ['function']:
 			lline = ' '.join(tokens[3:])
 			print(tokens[0], tokens[1], tokens[2], magenta_bold + lline + reset)
