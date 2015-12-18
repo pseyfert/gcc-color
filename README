@@ -1,4 +1,8 @@
-gcc-color
+# DEPRECATION WARNING
+
+recent gcc versions colorise their output by default
+
+## gcc-color
 
 Filter gcc output for warnings and errors and colors accordingly.
 
